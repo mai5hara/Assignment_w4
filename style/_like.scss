@@ -1,0 +1,44 @@
+@import "./colorFont";
+@import "./button";
+
+.likeHeader {
+  display: flex;
+  justify-content: space-between;
+  background-color: orange;
+
+  .accountIcon {
+    display: flex;
+    .accountInfo {
+      line-height: 6px;
+      margin: auto 10px;
+    }
+
+    img {
+      width: 80px;
+      margin: 10px;
+      border-radius: 50%;
+    }
+  }
+  .buttonSet {
+    margin: auto 10px;
+    .gray {
+      @include whiteButton(20px);
+    }
+    .gray:hover {
+      @include aWhiteButton(20px);
+    }
+    .colored {
+      @include coloredButton(green, 20px);
+    }
+    .colored:hover {
+      @include coloredButton(rgba(0, 128, 0, 0.884), 20px);
+    }
+  }
+}
+.likeContainer {
+  text-align: center;
+  img {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

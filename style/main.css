@@ -1,1 +1,122 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.photo_collection {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 85% 15%;
+      grid-template-columns: 85% 15%;
+  grid-auto-rows: minmax(1fr, auto);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.likeHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: orange;
+}
+
+.likeHeader .accountIcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.likeHeader .accountIcon .accountInfo {
+  line-height: 6px;
+  margin: auto 10px;
+}
+
+.likeHeader .accountIcon img {
+  width: 80px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+.likeHeader .buttonSet {
+  margin: auto 10px;
+}
+
+.likeHeader .buttonSet .gray {
+  background-color: white;
+  border-radius: 10%;
+  padding: 8px 22px;
+  border: 1px solid #6d6d6d;
+  font-size: 20px;
+  color: #6d6d6d;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.likeHeader .buttonSet .gray:hover {
+  background-color: white;
+  border-radius: 10%;
+  padding: 8px 22px;
+  border: 1px solid black;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.likeHeader .buttonSet .colored {
+  background-color: green;
+  border-radius: 10%;
+  padding: 8px 22px;
+  border: 1px solid green;
+  border: none;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.likeHeader .buttonSet .colored:hover {
+  background-color: rgba(0, 128, 0, 0.884);
+  border-radius: 10%;
+  padding: 8px 22px;
+  border: 1px solid rgba(0, 128, 0, 0.884);
+  border: none;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.likeContainer {
+  text-align: center;
+}
+
+.likeContainer img {
+  width: 80%;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=main.css.map */

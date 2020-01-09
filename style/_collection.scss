@@ -3,8 +3,8 @@
 @import "./header";
 
 .photo_collection {
-    display: grid;
-    grid-template-columns: 85% 15%;
-    grid-auto-rows: minmax(1fr, auto);
-    grid
+  display: grid;
+  grid-template-columns: 85% 15%;
+  grid-auto-rows: minmax(1fr, auto);
+  // grid
 }
