@@ -1,0 +1,9 @@
+$bp-mobile: 480px;
+
+@mixin mobile{
+    @media screen and (max-width: $bp-mobile){
+        @content;
+    }
+}
+
+
