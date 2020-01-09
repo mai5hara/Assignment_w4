@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "_colorFont.scss",
+        "_header.scss",
+        "_footer.scss",
+        "_breakPoint.scss",
+        "_toppage.scss",
+        "_collection.scss",
+        "_account.scss",
+        "_like.scss",
+        "_upload.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
