@@ -1,0 +1,59 @@
+body, html {
+  height: 100%;
+}
+
+// header
+
+// categories
+.categories {
+  width: 100%;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      list-style: none;
+    }
+  }
+}
+
+// hero
+.hero-image {
+  width: 100%;
+  height: 600px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../imgs/toppage/hero.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-text {
+  width: 600px;
+  padding: 150px 0;
+  margin: 0 auto;
+  color: white;
+}
+
+.search {
+  background-color: white;
+  border-radius: 4px;
+  i {
+    margin: 0 10px;
+    color: gray;
+  }
+  form {
+    display: flex;
+    align-items: center;
+    input {
+      width: 100%;
+      height: 60px;
+      background-color: white;
+      border: 1px solid white;
+      border-radius: 4px;
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+}
+
+// main
