@@ -17,8 +17,9 @@
     flex-direction: column; /* 子要素をflexboxにより縦方向に揃える */
     justify-content: center; /* 子要素をflexboxにより中央に配置する */
     align-items: flex-end;  /* 子要素をflexboxにより中央に配置する */
-    width: 50%;
+    width: 40%;
     height: 400px;
+    padding-right: 50px;
     }
   
 .account_box{
