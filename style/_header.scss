@@ -133,6 +133,11 @@ h6{
     width: 10px;
     color:  rgb(134, 128, 128);
     }
+@media only screen and (max-width: 800px) {
+    .nav_link{
+        display: none;
+    }
+}
 
 @media only screen and (max-width: 480px) {
     .nav_link{

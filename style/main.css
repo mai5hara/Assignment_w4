@@ -178,6 +178,12 @@ h6 {
   color: #868080;
 }
 
+@media only screen and (max-width: 800px) {
+  .nav_link {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .nav_link {
     display: none;
@@ -206,8 +212,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.html {
+  width: 100%;
+}
+
 .body {
-  width: 1000px;
+  width: 100%;
   height: 100%;
   text-align: center;
 }
@@ -219,10 +229,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 40px;
-  margin-top: 60px;
-  width: 1300px;
-  height: 120px;
+  margin-top: 30px;
+  padding: 20px 0;
+  width: 100%;
+  height: 20%;
   background-color: #c7c2c2;
 }
 
@@ -453,6 +463,12 @@ h6 {
   color: #868080;
 }
 
+@media only screen and (max-width: 800px) {
+  .nav_link {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .nav_link {
     display: none;
@@ -496,6 +512,7 @@ body {
 }
 
 .account_container {
+  margin: 0 0 0 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -606,29 +623,8 @@ body {
   margin: 0 0 0 80px;
 }
 
-@media only screen and (max-width: 480px) {
-  .account_container {
-    width: 480px;
-  }
-  .account_box1 {
-    width: 50%;
-  }
-  .account_box {
-    width: 50%;
-  }
-  .account_box .fotter {
-    width: 25%;
-  }
-}
-
-@media only screen and (max-width: 480px) and (max-width: 400px) {
-  .account_box .wrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
 .wrapper {
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -643,350 +639,6 @@ body {
   height: 250px;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.like {
-  /* for mobile phone */
-}
-
-.like .back {
-  background-color: white;
-  width: 100%;
-  height: 30px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  font-size: 30px;
-  color: #6d6d6d;
-}
-
-.like .buttonSet {
-  margin: auto 0px;
-}
-
-.like .buttonSet .gray {
-  background-color: white;
-  border-radius: 10%;
-  padding: 8px 22px;
-  border: 1px solid #6d6d6d;
-  font-size: 15px;
-  color: #6d6d6d;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.like .buttonSet .gray:hover {
-  background-color: white;
-  border-radius: 10%;
-  padding: 8px 22px;
-  border: 1px solid black;
-  font-size: 15x;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.like .buttonSet .colored {
-  background-color: green;
-  border-radius: 10%;
-  padding: 8px 22px;
-  border: 1px solid green;
-  border: none;
-  font-size: 15px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.like .buttonSet .colored:hover {
-  background-color: rgba(0, 128, 0, 0.884);
-  border-radius: 10%;
-  padding: 8px 22px;
-  border: 1px solid rgba(0, 128, 0, 0.884);
-  border: none;
-  font-size: 15px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.like .forMobile {
-  visibility: hidden;
-}
-
-.like .likeHeader {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 30px;
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  background-color: 0;
-}
-
-.like .likeHeader .buttonSet {
-  margin-right: 20px;
-}
-
-.like .likeHeader .accountIcon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.like .likeHeader .accountIcon .accountInfo {
-  line-height: 6px;
-  margin: auto 10px;
-}
-
-.like .likeHeader .accountIcon img {
-  width: 80px;
-  margin: 20px;
-  border-radius: 50%;
-}
-
-.like .likeContainer {
-  width: 90%;
-  margin: 30px auto;
-}
-
-.like .likeContainer .mainPic {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.like .likeContainer .mainPic img {
-  width: 100%;
-}
-
-.like .likeContainer .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: left;
-}
-
-.like .subPic {
-  margin-top: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.like .subPic img {
-  width: 30%;
-  margin: 0 auto;
-}
-
-.like .tags {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.like .tags p {
-  display: block;
-  margin: 10px;
-  background-color: #eeeeee;
-}
-
-.like .tags a {
-  text-decoration: none;
-  color: #6d6d6d;
-}
-
-@media (max-width: 480px) {
-  .like .forDesktop {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-  }
-  .like .forMobile {
-    visibility: visible;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-  .like .subPic {
-    margin-top: 30px;
-    display: block;
-  }
-  .like .subPic img {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-}
-
-#uploadSection {
-  width: 90%;
-  margin: 0 5%;
-}
-
-#uploadSection .uploadContainer {
-  display: -ms-grid;
-  display: grid;
-  border: 2px dashed #d1d1d1;
-  width: 100%;
-  height: 460px;
-      grid-template-areas: "uploadItem1 uploadItem1" "uploadItem2-1 uploadItem2-2";
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  font-size: 14px;
-  line-height: 20px;
-}
-
-#uploadSection .uploadContainer:hover {
-  background-color: rgba(209, 209, 209, 0.2);
-  cursor: pointer;
-}
-
-#uploadSection .uploadContainer .uploadItem1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: uploadItem1;
-  width: 100%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-#uploadSection .uploadContainer .uploadItem1 div {
-  margin-top: 140px;
-}
-
-#uploadSection .uploadContainer .uploadItem1 div img {
-  padding-left: 16px;
-}
-
-#uploadSection .uploadContainer .uploadItem1 div .Mb {
-  display: none;
-}
-
-#uploadSection .uploadContainer .uploadItem1 div a {
-  color: navy;
-}
-
-#uploadSection .uploadContainer .uploadItem2-1 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: uploadItem2-1;
-  place-self: center;
-  -ms-grid-column-align: right;
-      justify-self: right;
-  padding: 10px;
-}
-
-#uploadSection .uploadContainer .uploadItem2-2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: uploadItem2-2;
-  place-self: center;
-  -ms-grid-column-align: left;
-      justify-self: left;
-  padding: 10px;
-}
-
-#uploadSection .uploadItem3 hr {
-  border: 0.5px solid #d1d1d1;
-}
-
-#uploadSection .uploadItem3 p {
-  display: inline;
-  font-size: 12px;
-}
-
-#uploadSection .uploadItem3 #uploadBtn {
-  float: right;
-}
-
-#uploadSection .uploadItem3 #uploadBtn button {
-  line-height: 32px;
-  border-radius: 5px;
-  padding: 0 11px;
-  font-size: 14px;
-  margin-left: 10px;
-  cursor: pointer;
-  color: #767676;
-}
-
-#uploadSection .uploadItem3 #uploadBtn button:hover {
-  border: 0.5px solid black;
-  color: black;
-}
-
-#uploadSection .uploadItem3 #uploadBtn button#CancelBtn {
-  background-color: white;
-}
-
-#uploadSection .uploadItem3 #uploadBtn button#PublishBtn {
-  background-color: #eeeeee;
-}
-
-@media screen and (max-width: 480px) {
-  #uploadSection .uploadContainer {
-    height: 400px;
-  }
-  #uploadSection .uploadContainer .uploadItem1 div .Lt {
-    display: none;
-  }
-  #uploadSection .uploadContainer .uploadItem1 div .Mb {
-    display: block;
-    padding-right: 16px;
-  }
-  #uploadSection .uploadContainer .uploadItem2-1 {
-    display: none;
-  }
-  #uploadSection .uploadContainer .uploadItem2-2 {
-    display: none;
-  }
-  #uploadSection .uploadItem3 {
-    text-align: center;
-  }
-  #uploadSection .uploadItem3 #uploadBtn {
-    width: 100%;
-  }
-  #uploadSection .uploadItem3 #uploadBtn button {
-    width: 96%;
-    margin: 2%;
-  }
-  #uploadSection .uploadItem3 #uploadBtn button#CancelBtn {
-    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
