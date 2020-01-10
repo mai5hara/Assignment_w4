@@ -1,0 +1,125 @@
+@import "./colorFont";
+@import "./button";
+@import "./breakPoint";
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.like {
+  .back {
+    background-color: white;
+    width: 100%;
+    height: 30px;
+    position: sticky;
+    top: 0;
+    font-size: 30px;
+    color: $unactive-font-color;
+  }
+
+  .buttonSet {
+    margin: auto 0px;
+    .gray {
+      @include whiteButton(15px);
+    }
+    .gray:hover {
+      @include aWhiteButton(15x);
+    }
+    .colored {
+      @include coloredButton(green, 15px);
+    }
+    .colored:hover {
+      @include coloredButton(rgba(0, 128, 0, 0.884), 15px);
+    }
+  }
+  .forMobile {
+    visibility: hidden;
+  }
+
+  .likeHeader {
+    position: sticky;
+    top: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    background-color: red($color: #000000);
+
+    .buttonSet {
+      margin-right: 20px;
+    }
+
+    .accountIcon {
+      display: flex;
+      .accountInfo {
+        line-height: 6px;
+        margin: auto 10px;
+      }
+
+      img {
+        width: 80px;
+        margin: 20px;
+        border-radius: 50%;
+      }
+    }
+  }
+  .likeContainer {
+    width: 90%;
+    margin: 30px auto;
+
+    .mainPic {
+      width: 90%;
+      margin: 0 auto;
+      img {
+        width: 100%;
+      }
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      text-align: left;
+    }
+  }
+  .subPic {
+    margin-top: 30px;
+    display: flex;
+    img {
+      width: 30%;
+      margin: 0 auto;
+    }
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    p {
+      display: block;
+      margin: 10px;
+      background-color: $unactive-btn-color;
+    }
+    a {
+      text-decoration: none;
+      color: $unactive-font-color;
+    }
+  }
+  /* for mobile phone */
+  @media (max-width: $bp-mobile) {
+    .forDesktop {
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+    }
+    .forMobile {
+      visibility: visible;
+      display: flex;
+    }
+
+    .subPic {
+      margin-top: 30px;
+      display: block;
+      img {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
