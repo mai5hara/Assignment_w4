@@ -27,6 +27,10 @@ body {
   padding: 0;
 }
 
+.like {
+  /* for mobile phone */
+}
+
 .like .back {
   background-color: white;
   width: 100%;
@@ -38,11 +42,11 @@ body {
   color: #6d6d6d;
 }
 
-.buttonSet {
+.like .buttonSet {
   margin: auto 0px;
 }
 
-.buttonSet .gray {
+.like .buttonSet .gray {
   background-color: white;
   border-radius: 10%;
   padding: 8px 22px;
@@ -56,7 +60,7 @@ body {
   cursor: pointer;
 }
 
-.buttonSet .gray:hover {
+.like .buttonSet .gray:hover {
   background-color: white;
   border-radius: 10%;
   padding: 8px 22px;
@@ -70,7 +74,7 @@ body {
   cursor: pointer;
 }
 
-.buttonSet .colored {
+.like .buttonSet .colored {
   background-color: green;
   border-radius: 10%;
   padding: 8px 22px;
@@ -85,7 +89,7 @@ body {
   cursor: pointer;
 }
 
-.buttonSet .colored:hover {
+.like .buttonSet .colored:hover {
   background-color: rgba(0, 128, 0, 0.884);
   border-radius: 10%;
   padding: 8px 22px;
@@ -100,7 +104,11 @@ body {
   cursor: pointer;
 }
 
-.likeHeader {
+.like .forMobile {
+  visibility: hidden;
+}
+
+.like .likeHeader {
   position: -webkit-sticky;
   position: sticky;
   top: 30px;
@@ -111,44 +119,45 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: 0;
 }
 
-.likeHeader .buttonSet {
+.like .likeHeader .buttonSet {
   margin-right: 20px;
 }
 
-.likeHeader .accountIcon {
+.like .likeHeader .accountIcon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.likeHeader .accountIcon .accountInfo {
+.like .likeHeader .accountIcon .accountInfo {
   line-height: 6px;
   margin: auto 10px;
 }
 
-.likeHeader .accountIcon img {
+.like .likeHeader .accountIcon img {
   width: 80px;
   margin: 20px;
   border-radius: 50%;
 }
 
-.likeContainer {
+.like .likeContainer {
   width: 90%;
   margin: 30px auto;
 }
 
-.likeContainer .mainPic {
+.like .likeContainer .mainPic {
   width: 90%;
   margin: 0 auto;
 }
 
-.likeContainer .mainPic img {
+.like .likeContainer .mainPic img {
   width: 100%;
 }
 
-.likeContainer .info {
+.like .likeContainer .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -158,32 +167,56 @@ body {
   text-align: left;
 }
 
-.subPic {
+.like .subPic {
   margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.subPic img {
+.like .subPic img {
   width: 30%;
   margin: 0 auto;
 }
 
-.tags {
+.like .tags {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-.tags p {
+.like .tags p {
   display: block;
   margin: 10px;
   background-color: #d2d2d2;
 }
 
-.tags a {
+.like .tags a {
   text-decoration: none;
   color: black;
+}
+
+@media (max-width: 480px) {
+  .like .forDesktop {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+  }
+  .like .forMobile {
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .like .subPic {
+    margin-top: 30px;
+    display: block;
+  }
+  .like .subPic img {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */
