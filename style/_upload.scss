@@ -1,0 +1,133 @@
+@import "_breakPoint","_colorFont";
+
+$uploadBdColor:#d1d1d1;
+
+#uploadSection{
+    width: 90%;
+    margin: 0 5%;
+
+    .uploadContainer{
+    display:grid;
+    border: 2px dashed $uploadBdColor;
+    width:100%;
+    height:460px;
+    grid-template-areas:
+    "uploadItem1 uploadItem1"
+    "uploadItem2-1 uploadItem2-2";
+    grid-template-columns: 50% 50%;
+    font-size:14px;
+    line-height: 20px;
+
+    &:hover{
+        background-color:rgba(209,209,209, 0.2);
+        cursor: pointer;
+    }
+    
+     .uploadItem1{
+      grid-area: uploadItem1;
+      width:100%;
+      margin:0 auto;
+      text-align: center;
+      div{
+          margin-top: 140px ;
+          img{
+              padding-left:16px;
+
+          }
+          .Mb{
+              display: none;
+          }
+          a{
+              color:navy;
+          }
+      }
+      }
+      .uploadItem2-1{
+        grid-area: uploadItem2-1;
+        place-self: center;
+        justify-self: right;
+        padding:10px;
+        } 
+      .uploadItem2-2{
+        grid-area: uploadItem2-2;
+        place-self: center;
+        justify-self: left;
+        padding:10px;
+      }
+     }
+    .uploadItem3{
+    hr{
+        border: 0.5px solid $uploadBdColor;
+    }
+    p{
+        display: inline;
+        font-size: 12px;
+    }
+    #uploadBtn{
+        float: right;
+    button{
+    line-height:32px;
+    border-radius: 5px;
+    padding: 0 11px;
+    font-size:14px;
+    margin-left:10px;
+    cursor: pointer;
+    color:#767676;
+    
+    &:hover{
+        border: 0.5px solid black;
+        color:black;
+    }
+    &#CancelBtn{
+        background-color: white;
+
+    }
+    &#PublishBtn{
+        background-color: $unactive-btn-color;
+    }
+    }
+}
+}
+}
+
+@include mobile{
+    #uploadSection{
+    .uploadContainer{
+      height: 400px;
+    .uploadItem1{
+        div{
+        .Lt{
+            display:none;
+        }
+        .Mb{
+
+            display: block;
+            padding-right: 16px;;
+        }
+    }
+    }
+    .uploadItem2-1{
+       display:none;
+        } 
+      .uploadItem2-2{
+       display: none;
+      }
+    }
+    .uploadItem3{
+        text-align: center;
+        #uploadBtn{
+            width: 100%;
+            button{
+                width: 96%;
+                margin:2%;
+            &#CancelBtn{
+                display: none;
+            }
+            }
+            
+        
+        }
+    }
+    }
+
+}
