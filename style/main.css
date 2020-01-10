@@ -40,8 +40,7 @@
 }
 
 #uploadSection .uploadContainer .uploadItem1 div .Mb {
-  display: inline-block;
-  visibility: hidden;
+  display: none;
 }
 
 #uploadSection .uploadContainer .uploadItem1 div a {
@@ -88,6 +87,7 @@
   font-size: 14px;
   margin-left: 10px;
   cursor: pointer;
+  color: #767676;
 }
 
 #uploadSection .uploadItem3 #uploadBtn button:hover {
@@ -95,16 +95,24 @@
   color: black;
 }
 
+#uploadSection .uploadItem3 #uploadBtn button#CancelBtn {
+  background-color: white;
+}
+
+#uploadSection .uploadItem3 #uploadBtn button#PublishBtn {
+  background-color: #d1d1d1;
+}
+
 @media screen and (max-width: 480px) {
   #uploadSection .uploadContainer {
     height: 400px;
   }
-  #uploadSection .uploadContainer .uploadItem1 .Lt {
-    visibility: hidden;
+  #uploadSection .uploadContainer .uploadItem1 div .Lt {
+    display: none;
   }
-  #uploadSection .uploadContainer .uploadItem1 .Mb {
-    visibility: visible;
-    display: inline-block;
+  #uploadSection .uploadContainer .uploadItem1 div .Mb {
+    display: block;
+    padding-right: 16px;
   }
   #uploadSection .uploadContainer .uploadItem2-1 {
     display: none;
@@ -121,6 +129,9 @@
   #uploadSection .uploadItem3 #uploadBtn button {
     width: 96%;
     margin: 2%;
+  }
+  #uploadSection .uploadItem3 #uploadBtn button#CancelBtn {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */

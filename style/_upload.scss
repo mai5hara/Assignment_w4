@@ -35,8 +35,7 @@ $uploadBdColor:#d1d1d1;
 
           }
           .Mb{
-              display: inline-block;
-              visibility: hidden;
+              display: none;
           }
           a{
               color:navy;
@@ -73,10 +72,18 @@ $uploadBdColor:#d1d1d1;
     font-size:14px;
     margin-left:10px;
     cursor: pointer;
+    color:#767676;
     
     &:hover{
         border: 0.5px solid black;
         color:black;
+    }
+    &#CancelBtn{
+        background-color: white;
+
+    }
+    &#PublishBtn{
+        background-color: #d1d1d1;
     }
 
     }
@@ -89,14 +96,16 @@ $uploadBdColor:#d1d1d1;
     .uploadContainer{
       height: 400px;
     .uploadItem1{
+        div{
         .Lt{
-            visibility: hidden;
+            display:none;
         }
         .Mb{
-            visibility: visible;
-            display: inline-block;
-        }
 
+            display: block;
+            padding-right: 16px;;
+        }
+    }
     }
     .uploadItem2-1{
        display:none;
@@ -112,7 +121,11 @@ $uploadBdColor:#d1d1d1;
             button{
                 width: 96%;
                 margin:2%;
+            &#CancelBtn{
+                display: none;
             }
+            }
+            
         
         }
     }
