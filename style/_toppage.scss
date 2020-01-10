@@ -1,3 +1,5 @@
+@import './breakPoint';
+
 // color
 $categories-text: #767676;
 $categories-text-active: #111111;
@@ -87,9 +89,15 @@ body, html {
 main {
   width: 80%;
   margin: 0 auto;
+  .wrapper-bottom-mb {
+    display: none;
+  }
   .container {
     column-count: 3;
     column-gap: 24px;
+    .wrapper-top-mb {
+      display: none;
+    }
     .wrapper {
       background-color: #000000;
     }
@@ -148,6 +156,102 @@ main {
             @include button(32px, #ffffff, 4px, 32px);
             button {
               padding: 0 11px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $bp-mobile) {
+  // categories
+  .categories {
+    ul {
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  }
+
+  // hero-image
+  .hero-text {
+    width: 90%;
+    h1 {
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
+    p {
+      margin-bottom: 15px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+  }
+  
+  // main
+  main {
+    width: 100%;
+    .wrapper-bottom-mb {
+      display: block;
+      margin: 0 10px;
+      margin-bottom: 40px;
+      color: #767676;
+      .wrapper-mb {
+        display: flex;
+        .left-buttons {
+          display: flex;
+          @include button(32px, #ffffff, 4px, 32px);
+          button {
+            padding: 0 11px;
+            border: 1px solid #767676;
+            border-radius: 4px;
+            &:first-child {
+              margin-right: 10px;
+            }
+          }
+        }
+        .right-buttons {
+          margin-left: auto;
+          @include button(32px, #ffffff, 4px, 32px);
+          button {
+            padding: 0 11px;
+            border: 1px solid #767676;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+    .container {
+      column-count: 1;
+      figure {
+        .wrapper-top {
+          display: none;
+        }
+        .wrapper-bottom {
+          display: none;
+        }
+      }
+      .wrapper-top-mb {
+        display: block;
+        .user {
+          display: flex;
+          height: 32px;
+          padding: 0 10px;
+          margin-bottom: 10px;
+          line-height: 32px;
+          a {
+            text-decoration: none;
+            img {
+              width: 32px;
+              height: 32px;
+              margin-right: 10px;
+              border-radius: 50%;
+            }
+          }
+          p {
+            color: #111111;
+            text-decoration: none;
+            a {
+              color: #111111;
             }
           }
         }
