@@ -1,3 +1,7 @@
+// color
+$categories-text: #767676;
+$categories-text-active: #111111;
+
 body, html {
   height: 100%;
 }
@@ -7,11 +11,26 @@ body, html {
 // categories
 .categories {
   width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 54px;
   ul {
     display: flex;
-    justify-content: space-between;
     li {
+      height: 54px;
+      margin-left: 32px;
       list-style: none;
+      a {
+        color: $categories-text;
+        text-decoration: none;
+      }
+      &.active {
+        box-sizing: border-box;
+        border-bottom: 2px solid $categories-text-active;
+        a {
+          color: $categories-text-active;
+        }
+      }
     }
   }
 }
