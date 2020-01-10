@@ -22,14 +22,99 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.like .back {
+  background-color: white;
+  width: 100%;
+  height: 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  font-size: 30px;
+  color: #6d6d6d;
+}
+
+.buttonSet {
+  margin: auto 0px;
+}
+
+.buttonSet .gray {
+  background-color: white;
+  border-radius: 10%;
+  padding: 8px 22px;
+  border: 1px solid #6d6d6d;
+  font-size: 15px;
+  color: #6d6d6d;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttonSet .gray:hover {
+  background-color: white;
+  border-radius: 10%;
+  padding: 8px 22px;
+  border: 1px solid black;
+  font-size: 15x;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttonSet .colored {
+  background-color: green;
+  border-radius: 10%;
+  padding: 8px 22px;
+  border: 1px solid green;
+  border: none;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.buttonSet .colored:hover {
+  background-color: rgba(0, 128, 0, 0.884);
+  border-radius: 10%;
+  padding: 8px 22px;
+  border: 1px solid rgba(0, 128, 0, 0.884);
+  border: none;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 .likeHeader {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 30px;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: orange;
+}
+
+.likeHeader .buttonSet {
+  margin-right: 20px;
 }
 
 .likeHeader .accountIcon {
@@ -45,78 +130,60 @@ body {
 
 .likeHeader .accountIcon img {
   width: 80px;
-  margin: 10px;
+  margin: 20px;
   border-radius: 50%;
 }
 
-.likeHeader .buttonSet {
-  margin: auto 10px;
-}
-
-.likeHeader .buttonSet .gray {
-  background-color: white;
-  border-radius: 10%;
-  padding: 8px 22px;
-  border: 1px solid #6d6d6d;
-  font-size: 20px;
-  color: #6d6d6d;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.likeHeader .buttonSet .gray:hover {
-  background-color: white;
-  border-radius: 10%;
-  padding: 8px 22px;
-  border: 1px solid black;
-  font-size: 20px;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.likeHeader .buttonSet .colored {
-  background-color: green;
-  border-radius: 10%;
-  padding: 8px 22px;
-  border: 1px solid green;
-  border: none;
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-.likeHeader .buttonSet .colored:hover {
-  background-color: rgba(0, 128, 0, 0.884);
-  border-radius: 10%;
-  padding: 8px 22px;
-  border: 1px solid rgba(0, 128, 0, 0.884);
-  border: none;
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
 .likeContainer {
-  text-align: center;
+  width: 90%;
+  margin: 30px auto;
 }
 
-.likeContainer img {
-  width: 80%;
+.likeContainer .mainPic {
+  width: 90%;
   margin: 0 auto;
+}
+
+.likeContainer .mainPic img {
+  width: 100%;
+}
+
+.likeContainer .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+}
+
+.subPic {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.subPic img {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tags p {
+  display: block;
+  margin: 10px;
+  background-color: #d2d2d2;
+}
+
+.tags a {
+  text-decoration: none;
+  color: black;
 }
 /*# sourceMappingURL=main.css.map */

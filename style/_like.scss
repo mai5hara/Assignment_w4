@@ -1,10 +1,48 @@
 @import "./colorFont";
 @import "./button";
 
+body {
+  margin: 0;
+  padding: 0;
+}
+.like {
+  .back {
+    background-color: white;
+    width: 100%;
+    height: 30px;
+    position: sticky;
+    top: 0;
+    font-size: 30px;
+    color: $unactive-font-color;
+  }
+}
+
+.buttonSet {
+  margin: auto 0px;
+  .gray {
+    @include whiteButton(15px);
+  }
+  .gray:hover {
+    @include aWhiteButton(15x);
+  }
+  .colored {
+    @include coloredButton(green, 15px);
+  }
+  .colored:hover {
+    @include coloredButton(rgba(0, 128, 0, 0.884), 15px);
+  }
+}
+
 .likeHeader {
+  position: sticky;
+  top: 30px;
+  background-color: white;
   display: flex;
   justify-content: space-between;
-  background-color: orange;
+
+  .buttonSet {
+    margin-right: 20px;
+  }
 
   .accountIcon {
     display: flex;
@@ -15,30 +53,45 @@
 
     img {
       width: 80px;
-      margin: 10px;
+      margin: 20px;
       border-radius: 50%;
-    }
-  }
-  .buttonSet {
-    margin: auto 10px;
-    .gray {
-      @include whiteButton(20px);
-    }
-    .gray:hover {
-      @include aWhiteButton(20px);
-    }
-    .colored {
-      @include coloredButton(green, 20px);
-    }
-    .colored:hover {
-      @include coloredButton(rgba(0, 128, 0, 0.884), 20px);
     }
   }
 }
 .likeContainer {
-  text-align: center;
-  img {
-    width: 80%;
+  width: 90%;
+  margin: 30px auto;
+
+  .mainPic {
+    width: 90%;
     margin: 0 auto;
+    img {
+      width: 100%;
+    }
+  }
+  .info {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+.subPic {
+  margin-top: 30px;
+  display: flex;
+  img {
+    width: 30%;
+    margin: 0 auto;
+  }
+}
+.tags {
+  display: flex;
+  p {
+    display: block;
+    margin: 10px;
+    background-color: rgb(210, 210, 210);
+  }
+  a {
+    text-decoration: none;
+    color: black;
   }
 }
