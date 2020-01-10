@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/1e1751db70.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style/main.css"/>
     <title>my page</title>
-</head>
-<body>
+  </head>
+  <body>
+  <div class="small_nav">
+    <a class=small_icon href="toppage.html"><i class="fas fa-home fa-2x"></i></a>
+    <a class=small_icon href="https://unsplash.com/@patrick_schneider"><i class="fas fa-search fa-2x"></i></a>
+    <a class=small_icon href="collection.html"><i class="fas fa-book-open fa-2x"></i></a>
+    <a class=small_icon href="https://unsplash.com/explore"><i class="fab fa-wpexplorer fa-2x"></i></a>
+  </div>
+  <nav class="navbar">
+    <div class="tae"><i class="fas fa-boxes fa-2x"></i></div>
+    <div class="logoname_big">Unsplash<br>
+      <h6 class="small_logo">Photos for everyone</h6>
+    </div>
     
-</body>
-</html>
+    <form method="get" action="#" class="search_container">
+      <i class="fas fa-search"></i>
+      <input type="text" size="25" placeholder="Search photos">
+    </form>
+    <a class="nav_link" href="collection.html">Collections</a>
+    <a class="nav_link" href="https://unsplash.com/explore">Explore</a>
+    <a class="nav_link" href="https://unsplash.com/explore"><i class="fas fa-stream"></i></a>
+    <a href="upload.html" class="btn-flat-border">Submit a photo</a>
+    <div class="line">|</div>
+    <a href="upload.html" class="btn-flat-border2">Login</a>
+    <a href="upload.html" class="btn-flat-border3">Join free</a>    
+  </nav>
+
+  <div class="account_container">
+    <div class="account_box1"><img src="./imgs/account/D4VlVh1XkAEqGet.jpg" alt="" class="account_pic"></div>
+    <div class="account_box">
+      <div class="account_name">
+        Beyoncé
+      </div>  
+      <div class="account_address">
+        <i class="fas fa-map-marker-alt"></i> Vancouver
+      </div>
+      <div class="account_status">
+        UX Designer @ UnitedStates
+      </div>
+      <div class="followbutton">
+        <a href="upload.html" class="btn-flat-border4">+follow</a> 
+      </div>
+    </div>
+    <hr class="account_hr">
+
+
+    <div class="wrapper">
+      <div class="box a"><a href="liked.html"><img src="./imgs/account/photo-1.jpg" alt="" class="account_art"></a></div>
+      <div class="box b"><a href="liked.html"></a><img src="./imgs/account/photo-3.jpg" alt=""class="account_art"></a></div>
+      <div class="box c"><a href="liked.html"></a><img src="./imgs/account/photo2.jpg" alt=""class="account_art"></a></div>
+      <div class="box d"><a href="liked.html"></a><img src="./imgs/account/photo-4.jpg" alt=""class="account_art"></a></div>
+      <div class="box e"><a href="liked.html"></a><img src="./imgs/account/photo-5.jpg" alt=""class="account_art"></a></div>
+      <div class="box f"><a href="liked.html"></a><img src="./imgs/account/photo-6.jpg" alt=""class="account_art"></a></div>
+      <div class="box d"><a href="liked.html"></a><img src="./imgs/account/photo-7.jpg" alt=""class="account_art"></a></div>
+      <div class="box e"><a href="liked.html"></a><img src="./imgs/account/photo-10.jpg" alt=""class="account_art"></a></div>
+      <div class="box f"><a href="liked.html"></a><img src="./imgs/account/photo-11.jpg" alt=""class="account_art"></a></div>
+    </div>
+      <div id="extend">
+        <a href="upload.html" class="btn-flat-border5" >More photos</a>
+      </div>
+    </div>
+    <footer class=footer>
+      <i class="fas fa-boxes fa-3x"></i><br>
+      <div class="footer_message">Make something awesome</div>
+    </footer>
+
+  </body>
+  </html>
