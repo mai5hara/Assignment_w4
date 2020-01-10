@@ -206,8 +206,12 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.html {
+  width: 100%;
+}
+
 .body {
-  width: 1000px;
+  width: 100%;
   height: 100%;
   text-align: center;
 }
@@ -219,10 +223,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-top: 40px;
-  margin-top: 60px;
-  width: 1300px;
-  height: 120px;
+  margin-top: 30px;
+  padding: 20px 0;
+  width: 100%;
+  height: 20%;
   background-color: #c7c2c2;
 }
 
@@ -606,28 +610,6 @@ body {
   margin: 0 0 0 80px;
 }
 
-@media only screen and (max-width: 480px) {
-  .account_container {
-    width: 480px;
-  }
-  .account_box1 {
-    width: 50%;
-  }
-  .account_box {
-    width: 50%;
-  }
-  .account_box .fotter {
-    width: 25%;
-  }
-}
-
-@media only screen and (max-width: 480px) and (max-width: 400px) {
-  .account_box .wrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-}
-
 .wrapper {
   display: -ms-grid;
   display: grid;
@@ -641,5 +623,29 @@ body {
 .account_art {
   width: 330px;
   height: 250px;
+}
+
+@media only screen and (max-width: 480px) {
+  .account_container {
+    width: 480px;
+  }
+  .account_box1 {
+    width: 50%;
+  }
+  .account_box {
+    width: 50%;
+  }
+  .wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-auto-rows: 200px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .account_art {
+    width: 483px;
+    height: 250px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
