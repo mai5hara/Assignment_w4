@@ -190,12 +190,12 @@ body {
 .like .tags p {
   display: block;
   margin: 10px;
-  background-color: #d2d2d2;
+  background-color: #eeeeee;
 }
 
 .like .tags a {
   text-decoration: none;
-  color: black;
+  color: #6d6d6d;
 }
 
 @media (max-width: 480px) {
