@@ -82,13 +82,11 @@ $uploadBdColor:#d1d1d1;
         color:black;
     }
     &#CancelBtn{
-        background-color: #eeeeee;;
-
+      background-color:white;
     }
     &#PublishBtn{
-        background-color: #d1d1d1;
+        background-color: $unactive-btn-color;
     }
-
     }
 }
 }
