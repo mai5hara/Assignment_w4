@@ -5,31 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="./main.css">
     <title>Upload Photo Page</title>
 </head>
 <body>
-    <section>
-        <div>
-         <h4>Publish your photos</h4>
-         <div>
-         <img src="https://cdn.pixabay.com/photo/2015/12/22/04/00/photo-1103595_1280.png" alt="">
-         <p>Drop your images here on Browse</p>
-         </div>
+    <header>
 
+    </header>
+    <section id="uploadSection">
+        <h3>Publish your photos</h3>
+         <div class="uploadContainer">
+         <div class="uploadItem1">
          <div>
+         <img src="uploadIcon.png" alt="" width="150px">
+
+         <p class="Lt">Drop your images here or <a href="">Browse</a></p>
+         <p class="Mb">Add your photos here</p>
+        </div>
+        </div>
+
+         <div class="uploadItem2-1">
          <ul>
             <li>High quality photos (at least 5MP)</li>
             <li>Photos are clear & original</li>
             <li>Only upload photos you own the rights to</li>
+         </ul>
+        </div>
+         <div class="uploadItem2-2">
+         <ul>
             <li>Zero tolerance for nudity, violence or hate</li>
             <li>Respect the intellectual property of others</li>
-            <li>Read the Unsplash Terms</li>
+            <li>Read the Terms and Conditions</li>
         </ul>
          </div>
+        </div>
+        <div class="uploadItem3">
+            <hr class="uploadBorder">
 
+            <div id="uploadBtn">
+            <button id="CancelBtn">Cancel</button>
+            <button id="PublishBtn">Publish</button>
+            </div>
+            <p>Read the License</p>
         </div>
     </section>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
