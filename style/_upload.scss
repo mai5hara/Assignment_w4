@@ -1,10 +1,13 @@
 @import "_breakPoint","_colorFont";
 
+
+
 $uploadBdColor:#d1d1d1;
 
 #uploadSection{
     width: 90%;
     margin: 0 5%;
+    color:$font-color;
 
     .uploadContainer{
     display:grid;
@@ -79,7 +82,7 @@ $uploadBdColor:#d1d1d1;
         color:black;
     }
     &#CancelBtn{
-        background-color: white;
+        background-color: #eeeeee;;
 
     }
     &#PublishBtn{

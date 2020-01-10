@@ -1,6 +1,7 @@
 #uploadSection {
   width: 90%;
   margin: 0 5%;
+  color: #101010;
 }
 
 #uploadSection .uploadContainer {
@@ -96,7 +97,7 @@
 }
 
 #uploadSection .uploadItem3 #uploadBtn button#CancelBtn {
-  background-color: white;
+  background-color: #eeeeee;
 }
 
 #uploadSection .uploadItem3 #uploadBtn button#PublishBtn {
