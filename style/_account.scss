@@ -6,6 +6,7 @@
     text-align: center;
     }
 .account_container{
+    margin: 0 0 0 50px;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -28,7 +29,6 @@
     width: 50%;
     height: 400px;
     }
-
      
 .account_pic{
     width: 250px;
@@ -78,6 +78,7 @@
     }
 
 .wrapper {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -89,22 +90,32 @@
         }
 
 @media only screen and (max-width: 480px) {
+    .body{
+        width: 100%;
+    }
     .account_container{
         width: 480px;
-        }
+        margin: 0 0 0 200px;
+    }
     .account_box1{
-        width: 50%;
+        margin: 0 0 0 100px;
+        width: 20%;
         }
     .account_box{
-        width: 50%;
+        width: 30%;
+    }
+    .fotter{
+        width: 300%;
     }
     .wrapper {
         grid-template-columns: 1fr;
         grid-auto-rows: 200px;
         justify-content: center;
+        margin: 0px;
         }
     .account_art{
         width: 483px;
         height: 250px;
     }
 }
+

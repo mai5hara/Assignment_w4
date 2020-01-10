@@ -178,6 +178,12 @@ h6 {
   color: #868080;
 }
 
+@media only screen and (max-width: 800px) {
+  .nav_link {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .nav_link {
     display: none;
@@ -457,6 +463,12 @@ h6 {
   color: #868080;
 }
 
+@media only screen and (max-width: 800px) {
+  .nav_link {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .nav_link {
     display: none;
@@ -500,6 +512,7 @@ body {
 }
 
 .account_container {
+  margin: 0 0 0 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -611,6 +624,7 @@ body {
 }
 
 .wrapper {
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -626,14 +640,22 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
+  .body {
+    width: 100%;
+  }
   .account_container {
     width: 480px;
+    margin: 0 0 0 200px;
   }
   .account_box1 {
-    width: 50%;
+    margin: 0 0 0 100px;
+    width: 20%;
   }
   .account_box {
-    width: 50%;
+    width: 30%;
+  }
+  .fotter {
+    width: 300%;
   }
   .wrapper {
     -ms-grid-columns: 1fr;
@@ -642,6 +664,7 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin: 0px;
   }
   .account_art {
     width: 483px;
