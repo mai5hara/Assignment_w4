@@ -39,7 +39,7 @@ body {
   .likeHeader {
     position: sticky;
     top: 30px;
-    background-color: white;
+
     display: flex;
     justify-content: space-between;
     background-color: red($color: #000000);
@@ -51,7 +51,7 @@ body {
     .accountIcon {
       display: flex;
       .accountInfo {
-        line-height: 6px;
+        line-height: 14px;
         margin: auto 10px;
       }
 

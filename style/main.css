@@ -288,6 +288,304 @@ body {
   width: 400%;
 }
 
+body, html {
+  height: 100%;
+}
+
+.categories {
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 54px;
+}
+
+.categories ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.categories ul li {
+  height: 54px;
+  margin-left: 32px;
+  list-style: none;
+}
+
+.categories ul li a {
+  color: #767676;
+  text-decoration: none;
+}
+
+.categories ul li.active {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-bottom: 2px solid #111111;
+}
+
+.categories ul li.active a {
+  color: #111111;
+}
+
+.hero-image {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 48px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../imgs/toppage/hero.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../imgs/toppage/hero.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-text {
+  width: 600px;
+  padding: 150px 0;
+  margin: 0 auto;
+  color: white;
+}
+
+.search {
+  background-color: white;
+  border-radius: 4px;
+}
+
+.search i {
+  margin: 0 10px;
+  color: gray;
+}
+
+.search form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search form input {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.search form input:focus {
+  outline: 0;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main .wrapper-bottom-mb {
+  display: none;
+}
+
+main .container {
+  -webkit-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 24px;
+          column-gap: 24px;
+}
+
+main .container .wrapper-top-mb {
+  display: none;
+}
+
+main .container .wrapper {
+  background-color: #000000;
+}
+
+main .container figure {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+main .container figure:hover {
+  opacity: 0.9;
+}
+
+main .container figure img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -4px;
+}
+
+main .container figure .wrapper-top {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .container figure .wrapper-top .button {
+  height: 32px;
+  line-height: 32px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+main .container figure .wrapper-top .button button {
+  padding: 0 11px;
+}
+
+main .container figure .wrapper-top .button:first-child {
+  margin-right: 10px;
+}
+
+main .container figure .wrapper-bottom {
+  position: absolute;
+  bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 0 12px;
+}
+
+main .container figure .wrapper-bottom .user {
+  height: 32px;
+  line-height: 32px;
+}
+
+main .container figure .wrapper-bottom .user a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+}
+
+main .container figure .wrapper-bottom .user a img {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+main .container figure .wrapper-bottom .user a p {
+  color: #ffffff;
+}
+
+main .container figure .wrapper-bottom .download {
+  margin-left: auto;
+}
+
+main .container figure .wrapper-bottom .download .button {
+  height: 32px;
+  line-height: 32px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+main .container figure .wrapper-bottom .download .button button {
+  padding: 0 11px;
+}
+
+@media (max-width: 480px) {
+  .categories ul {
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .hero-text {
+    width: 90%;
+  }
+  .hero-text h1 {
+    margin-bottom: 15px;
+    font-size: 28px;
+  }
+  .hero-text p {
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+  main {
+    width: 100%;
+  }
+  main .wrapper-bottom-mb {
+    display: block;
+    margin: 0 10px;
+    margin-bottom: 40px;
+    color: #767676;
+  }
+  main .wrapper-bottom-mb .wrapper-mb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  main .wrapper-bottom-mb .wrapper-mb .left-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 32px;
+    line-height: 32px;
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+  main .wrapper-bottom-mb .wrapper-mb .left-buttons button {
+    padding: 0 11px;
+    border: 1px solid #767676;
+    border-radius: 4px;
+  }
+  main .wrapper-bottom-mb .wrapper-mb .left-buttons button:first-child {
+    margin-right: 10px;
+  }
+  main .wrapper-bottom-mb .wrapper-mb .right-buttons {
+    margin-left: auto;
+    height: 32px;
+    line-height: 32px;
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+  main .wrapper-bottom-mb .wrapper-mb .right-buttons button {
+    padding: 0 11px;
+    border: 1px solid #767676;
+    border-radius: 4px;
+  }
+  main .container {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
+  main .container figure .wrapper-top {
+    display: none;
+  }
+  main .container figure .wrapper-bottom {
+    display: none;
+  }
+  main .container .wrapper-top-mb {
+    display: block;
+  }
+  main .container .wrapper-top-mb .user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 32px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+    line-height: 32px;
+  }
+  main .container .wrapper-top-mb .user a {
+    text-decoration: none;
+  }
+  main .container .wrapper-top-mb .user a img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  main .container .wrapper-top-mb .user p {
+    color: #111111;
+    text-decoration: none;
+  }
+  main .container .wrapper-top-mb .user p a {
+    color: #111111;
+  }
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -939,7 +1237,6 @@ body {
   position: -webkit-sticky;
   position: sticky;
   top: 30px;
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -960,7 +1257,7 @@ body {
 }
 
 .like .likeHeader .accountIcon .accountInfo {
-  line-height: 6px;
+  line-height: 14px;
   margin: auto 10px;
 }
 
